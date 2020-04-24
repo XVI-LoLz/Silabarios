@@ -1,21 +1,43 @@
+:root{
+    --light-body-background: #FFFAFA;
+    --dark-body-background: #373737;
+}
+
 body{
+    background-color: var(--light-body-background);
+    margin: 0px;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: red;
+
+    display: none;
+}
+
+#wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    
+    height: 100vh;
 
     font-family: 'Noto Sans JP';
     font-size: 3em;
-
-    background-color: #373737;
 }
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
-a:hover{
-    background-color: #141414;
-    padding: 12px;
+#wrapper a:hover{
+    background-color: #30C4FF;
+    color: white;
+
+    border-radius: 4px;
 }

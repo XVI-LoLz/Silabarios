@@ -1,23 +1,29 @@
 :root{
+    --snow: #fffafa;
+    --black: #000;
     --gray: #373737;
-    --gray-light: #494949;
+    --gray-mid: #494949;
+    --gray-light: #D7D7D7;
     --pink: #ff388a;
+    --pink-mid: #ff60a1;
     --pink-light: #ff92bf;
-    --blue: #00aaff;
+    --blue: #10B3FF;
+    --blue-mid: #33bbff;
     --blue-light: #73d0ff;
-    --yellow: #f8d15c;
-    --yellow-light: #f5b700;
+    --yellow: #f5b700;
+    --yellow-light: #f8d15c;
+    --yellow-mid: #f7c533;
 }
 
 body{
     font-family: 'Noto Sans JP';
-    background-color: #373737;
-    color: white;
+    background-color: var(--snow);
+    color: var(--black);
     margin: 0px;
 }
 
 #navbar{
-    background-color: snow;
+    background-color: var(--snow);
 }
 
 #title, #subtitle{
@@ -52,45 +58,45 @@ body{
 
     border-radius: 50%;
 
-    text-shadow: 1px 1px 2px #373737;
+    /* text-shadow: 1px 1px 2px var(--snow); */
 }
 
 .empty{
-    background-color: #494949;
+    background-color: var(--gray-light);
 }
 
 .hiragana{
-    background-color: #73D0FF;
+    background-color: var(--blue-light);
 
     transition-timing-function: ease-in-out;
     transition-duration: 200ms;
 }
 
 .katakana{
-    background-color: #F8D15C;
+    background-color: var(--yellow-light);
 
     transition-timing-function: ease-in-out;
     transition-duration: 200ms;
 }
 
 .exception{
-    background-color: #FF92BF;
+    background-color: var(--pink-light);
 }
 
 .hiragana:hover{
     transform: scale(1.5);
-    background-color: #00aaff;
+    background-color: var(--blue);
     cursor: none;
 }
 
 .katakana:hover{
     transform: scale(1.5);
-    background-color: #F5B700;
+    background-color: var(--yellow);
     cursor: none;
 }
 
 .exception:hover{
-    background-color: #FF388A;
+    background-color: var(--pink-mid);
 }
 
 

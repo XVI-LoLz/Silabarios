@@ -1,212 +1,230 @@
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Sawarabi+Mincho&display=swap"
-    rel="stylesheet">
+<html lang="es">
 
-<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="silabarios.css">
 
-<script>
-    var a = new Audio();
-    a.src = "audios/a.mp3";
-    var i = new Audio();
-    i.src = "audios/i.mp3";
-    var u = new Audio();
-    u.src = "audios/u.mp3";
-    var e = new Audio();
-    e.src = "audios/e.mp3";
-    var o = new Audio();
-    o.src = "audios/o.mp3";
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Sawarabi+Mincho&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
-    var ka = new Audio();
-    ka.src = "audios/ka.mp3";
-    var ki = new Audio();
-    ki.src = "audios/ki.mp3";
-    var ku = new Audio();
-    ku.src = "audios/ku.mp3";
-    var ke = new Audio();
-    ke.src = "audios/ke.mp3";
-    var ko = new Audio();
-    ko.src = "audios/ko.mp3";
+    <script>
+        var a = new Audio();
+        a.src = "audios/a.mp3";
+        var i = new Audio();
+        i.src = "audios/i.mp3";
+        var u = new Audio();
+        u.src = "audios/u.mp3";
+        var e = new Audio();
+        e.src = "audios/e.mp3";
+        var o = new Audio();
+        o.src = "audios/o.mp3";
 
-    var sa = new Audio();
-    sa.src = "audios/sa.mp3";
-    var shi = new Audio();
-    shi.src = "audios/shi.mp3";
-    var su = new Audio();
-    su.src = "audios/su.mp3";
-    var se = new Audio();
-    se.src = "audios/se.mp3";
-    var so = new Audio();
-    so.src = "audios/so.mp3";
+        var ka = new Audio();
+        ka.src = "audios/ka.mp3";
+        var ki = new Audio();
+        ki.src = "audios/ki.mp3";
+        var ku = new Audio();
+        ku.src = "audios/ku.mp3";
+        var ke = new Audio();
+        ke.src = "audios/ke.mp3";
+        var ko = new Audio();
+        ko.src = "audios/ko.mp3";
 
-    var ta = new Audio();
-    ta.src = "audios/ta.mp3";
-    var chi = new Audio();
-    chi.src = "audios/chi.mp3"; var tsu = new Audio();
-    tsu.src = "audios/tsu.mp3";
-    var te = new Audio();
-    te.src = "audios/te.mp3";
-    var to = new Audio();
-    to.src = "audios/to.mp3";
+        var sa = new Audio();
+        sa.src = "audios/sa.mp3";
+        var shi = new Audio();
+        shi.src = "audios/shi.mp3";
+        var su = new Audio();
+        su.src = "audios/su.mp3";
+        var se = new Audio();
+        se.src = "audios/se.mp3";
+        var so = new Audio();
+        so.src = "audios/so.mp3";
 
-    var na = new Audio();
-    na.src = "audios/na.mp3";
-    var ni = new Audio();
-    ni.src = "audios/ni.mp3";
-    var nu = new Audio();
-    nu.src = "audios/nu.mp3";
-    var ne = new Audio();
-    ne.src = "audios/ne.mp3";
-    var no = new Audio();
-    no.src = "audios/no.mp3";
+        var ta = new Audio();
+        ta.src = "audios/ta.mp3";
+        var chi = new Audio();
+        chi.src = "audios/chi.mp3"; var tsu = new Audio();
+        tsu.src = "audios/tsu.mp3";
+        var te = new Audio();
+        te.src = "audios/te.mp3";
+        var to = new Audio();
+        to.src = "audios/to.mp3";
 
-    var ha = new Audio();
-    ha.src = "audios/ha.mp3";
-    var hi = new Audio();
-    hi.src = "audios/hi.mp3";
-    var fu = new Audio();
-    fu.src = "audios/fu.mp3";
-    var he = new Audio();
-    he.src = "audios/he.mp3";
-    var ho = new Audio();
-    ho.src = "audios/ho.mp3";
+        var na = new Audio();
+        na.src = "audios/na.mp3";
+        var ni = new Audio();
+        ni.src = "audios/ni.mp3";
+        var nu = new Audio();
+        nu.src = "audios/nu.mp3";
+        var ne = new Audio();
+        ne.src = "audios/ne.mp3";
+        var no = new Audio();
+        no.src = "audios/no.mp3";
 
-    var ma = new Audio();
-    ma.src = "audios/ma.mp3";
-    var mi = new Audio();
-    mi.src = "audios/mi.mp3";
-    var mu = new Audio();
-    mu.src = "audios/mu.mp3";
-    var me = new Audio();
-    me.src = "audios/me.mp3";
-    var mo = new Audio();
-    mo.src = "audios/mo.mp3";
+        var ha = new Audio();
+        ha.src = "audios/ha.mp3";
+        var hi = new Audio();
+        hi.src = "audios/hi.mp3";
+        var fu = new Audio();
+        fu.src = "audios/fu.mp3";
+        var he = new Audio();
+        he.src = "audios/he.mp3";
+        var ho = new Audio();
+        ho.src = "audios/ho.mp3";
 
-    var ya = new Audio();
-    ya.src = "audios/ya.mp3";
-    var yu = new Audio();
-    yu.src = "audios/yu.mp3";
-    var yo = new Audio();
-    yo.src = "audios/yo.mp3";
+        var ma = new Audio();
+        ma.src = "audios/ma.mp3";
+        var mi = new Audio();
+        mi.src = "audios/mi.mp3";
+        var mu = new Audio();
+        mu.src = "audios/mu.mp3";
+        var me = new Audio();
+        me.src = "audios/me.mp3";
+        var mo = new Audio();
+        mo.src = "audios/mo.mp3";
 
-    var ra = new Audio();
-    ra.src = "audios/ra.mp3";
-    var ri = new Audio();
-    ri.src = "audios/ri.mp3";
-    var ru = new Audio();
-    ru.src = "audios/ru.mp3";
-    var re = new Audio();
-    re.src = "audios/re.mp3";
-    var ro = new Audio();
-    ro.src = "audios/ro.mp3";
+        var ya = new Audio();
+        ya.src = "audios/ya.mp3";
+        var yu = new Audio();
+        yu.src = "audios/yu.mp3";
+        var yo = new Audio();
+        yo.src = "audios/yo.mp3";
 
-    var wa = new Audio();
-    wa.src = "audios/wa.mp3";
-    var wo = new Audio();
-    wo.src = "audios/wo.mp3";
+        var ra = new Audio();
+        ra.src = "audios/ra.mp3";
+        var ri = new Audio();
+        ri.src = "audios/ri.mp3";
+        var ru = new Audio();
+        ru.src = "audios/ru.mp3";
+        var re = new Audio();
+        re.src = "audios/re.mp3";
+        var ro = new Audio();
+        ro.src = "audios/ro.mp3";
 
-    var nn = new Audio();
-    nn.src = "audios/nn.mp3";
-</script>
+        var wa = new Audio();
+        wa.src = "audios/wa.mp3";
+        var wo = new Audio();
+        wo.src = "audios/wo.mp3";
 
-<h1 id="title">Katakana</h1>
-<h2 id="subtitle">Pronunciación y Escritura</h2>
+        var nn = new Audio();
+        nn.src = "audios/nn.mp3";
+    </script>
 
-<div id="wrapper">
-    <div class="row">
-        <p class="char"></p>
-        <p class="char">a</p>
-        <p class="char">i</p>
-        <p class="char">u</p>
-        <p class="char">e</p>
-        <p class="char">o</p>
+    <title>Katakana</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="index.html">
+            <label>Volver</label>
+        </a>
+    </nav>
+
+    <h1 id="title">Katakana</h1>
+    <h2 id="subtitle">Pronunciación y Escritura</h2>
+
+    <div id="wrapper">
+        <div class="row">
+            <p class="char"></p>
+            <p class="char">a</p>
+            <p class="char">i</p>
+            <p class="char">u</p>
+            <p class="char">e</p>
+            <p class="char">o</p>
+        </div>
+        <div class="row">
+            <p class="char">-</p>
+            <p class="char katakana" onmousedown="a.play()">ア</p>
+            <p class="char katakana" onmousedown="i.play()">イ</p>
+            <p class="char katakana" onmousedown="u.play()">ウ</p>
+            <p class="char katakana" onmousedown="e.play()">エ</p>
+            <p class="char katakana" onmousedown="o.play()">オ</p>
+        </div>
+        <div class="row">
+            <p class="char">k</p>
+            <p class="char katakana" onmousedown="ka.play()">カ</p>
+            <p class="char katakana" onmousedown="ki.play()">キ</p>
+            <p class="char katakana" onmousedown="ku.play()">ク</p>
+            <p class="char katakana" onmousedown="ke.play()">ケ</p>
+            <p class="char katakana" onmousedown="ko.play()">コ</p>
+        </div>
+        <div class="row">
+            <p class="char">s</p>
+            <p class="char katakana" onmousedown="sa.play()">サ</p>
+            <p class="char katakana exception" onmousedown="shi.play()">シ</p>
+            <p class="char katakana" onmousedown="su.play()">ス</p>
+            <p class="char katakana" onmousedown="se.play()">セ</p>
+            <p class="char katakana" onmousedown="so.play()">ソ</p>
+        </div>
+        <div class="row">
+            <p class="char">t</p>
+            <p class="char katakana" onmousedown="ta.play()">タ</p>
+            <p class="char katakana exception" onmousedown="chi.play()">チ</p>
+            <p class="char katakana exception" onmousedown="tsu.play()">ツ</p>
+            <p class="char katakana" onmousedown="te.play()">テ</p>
+            <p class="char katakana" onmousedown="to.play()">ト</p>
+        </div>
+        <div class="row">
+            <p class="char">n</p>
+            <p class="char katakana" onmousedown="na.play()">ナ</p>
+            <p class="char katakana" onmousedown="ni.play()">ニ</p>
+            <p class="char katakana" onmousedown="nu.play()">ヌ</p>
+            <p class="char katakana" onmousedown="ne.play()">ネ</p>
+            <p class="char katakana" onmousedown="no.play()">ノ</p>
+        </div>
+        <div class="row">
+            <p class="char">h</p>
+            <p class="char katakana" onmousedown="ha.play()">ハ</p>
+            <p class="char katakana" onmousedown="hi.play()">ヒ</p>
+            <p class="char katakana exception" onmousedown="fu.play()">フ</p>
+            <p class="char katakana" onmousedown="he.play()">ヘ</p>
+            <p class="char katakana" onmousedown="ho.play()">ホ</p>
+        </div>
+        <div class="row">
+            <p class="char">m</p>
+            <p class="char katakana" onmousedown="ma.play()">マ</p>
+            <p class="char katakana" onmousedown="mi.play()">ミ</p>
+            <p class="char katakana" onmousedown="mu.play()">ム</p>
+            <p class="char katakana" onmousedown="me.play()">メ</p>
+            <p class="char katakana" onmousedown="mo.play()">モ</p>
+        </div>
+        <div class="row">
+            <p class="char">y</p>
+            <p class="char katakana" onmousedown="ya.play()">ヤ</p>
+            <p class="char empty"></p>
+            <p class="char katakana" onmousedown="yu.play()">ユ</p>
+            <p class="char empty"></p>
+            <p class="char katakana" onmousedown="yo.play()">ヨ</p>
+        </div>
+        <div class="row">
+            <p class="char">r</p>
+            <p class="char katakana" onmousedown="ra.play()">ラ</p>
+            <p class="char katakana" onmousedown="ri.play()">リ</p>
+            <p class="char katakana" onmousedown="ru.play()">ル</p>
+            <p class="char katakana" onmousedown="re.play()">レ</p>
+            <p class="char katakana" onmousedown="ro.play()">ロ</p>
+        </div>
+        <div class="row">
+            <p class="char">w</p>
+            <p class="char katakana" onmousedown="wa.play()">ワ</p>
+            <p class="char empty"></p>
+            <p class="char empty"></p>
+            <p class="char empty"></p>
+            <p class="char katakana exception" onmousedown="wo.play()">ヲ</p>
+        </div>
+        <div class="row">
+            <p class="char">n</p>
+            <p class="char katakana" onmousedown="nn.play()">ン</p>
+            <p class="char"></p>
+            <p class="char"></p>
+            <p class="char"></p>
+            <p class="char"></p>
+        </div>
     </div>
-    <div class="row">
-        <p class="char">-</p>
-        <p class="char katakana" onmousedown="a.play()">ア</p>
-        <p class="char katakana" onmousedown="i.play()">イ</p>
-        <p class="char katakana" onmousedown="u.play()">ウ</p>
-        <p class="char katakana" onmousedown="e.play()">エ</p>
-        <p class="char katakana" onmousedown="o.play()">オ</p>
-    </div>
-    <div class="row">
-        <p class="char">k</p>
-        <p class="char katakana" onmousedown="ka.play()">カ</p>
-        <p class="char katakana" onmousedown="ki.play()">キ</p>
-        <p class="char katakana" onmousedown="ku.play()">ク</p>
-        <p class="char katakana" onmousedown="ke.play()">ケ</p>
-        <p class="char katakana" onmousedown="ko.play()">コ</p>
-    </div>
-    <div class="row">
-        <p class="char">s</p>
-        <p class="char katakana" onmousedown="sa.play()">サ</p>
-        <p class="char katakana exception" onmousedown="shi.play()">シ</p>
-        <p class="char katakana" onmousedown="su.play()">ス</p>
-        <p class="char katakana" onmousedown="se.play()">セ</p>
-        <p class="char katakana" onmousedown="so.play()">ソ</p>
-    </div>
-    <div class="row">
-        <p class="char">t</p>
-        <p class="char katakana" onmousedown="ta.play()">タ</p>
-        <p class="char katakana exception" onmousedown="chi.play()">チ</p>
-        <p class="char katakana exception" onmousedown="tsu.play()">ツ</p>
-        <p class="char katakana" onmousedown="te.play()">テ</p>
-        <p class="char katakana" onmousedown="to.play()">ト</p>
-    </div>
-    <div class="row">
-        <p class="char">n</p>
-        <p class="char katakana" onmousedown="na.play()">ナ</p>
-        <p class="char katakana" onmousedown="ni.play()">ニ</p>
-        <p class="char katakana" onmousedown="nu.play()">ヌ</p>
-        <p class="char katakana" onmousedown="ne.play()">ネ</p>
-        <p class="char katakana" onmousedown="no.play()">ノ</p>
-    </div>
-    <div class="row">
-        <p class="char">h</p>
-        <p class="char katakana" onmousedown="ha.play()">ハ</p>
-        <p class="char katakana" onmousedown="hi.play()">ヒ</p>
-        <p class="char katakana exception" onmousedown="fu.play()">フ</p>
-        <p class="char katakana" onmousedown="he.play()">ヘ</p>
-        <p class="char katakana" onmousedown="ho.play()">ホ</p>
-    </div>
-    <div class="row">
-        <p class="char">m</p>
-        <p class="char katakana" onmousedown="ma.play()">マ</p>
-        <p class="char katakana" onmousedown="mi.play()">ミ</p>
-        <p class="char katakana" onmousedown="mu.play()">ム</p>
-        <p class="char katakana" onmousedown="me.play()">メ</p>
-        <p class="char katakana" onmousedown="mo.play()">モ</p>
-    </div>
-    <div class="row">
-        <p class="char">y</p>
-        <p class="char katakana" onmousedown="ya.play()">ヤ</p>
-        <p class="char empty"></p>
-        <p class="char katakana" onmousedown="yu.play()">ユ</p>
-        <p class="char empty"></p>
-        <p class="char katakana" onmousedown="yo.play()">ヨ</p>
-    </div>
-    <div class="row">
-        <p class="char">r</p>
-        <p class="char katakana" onmousedown="ra.play()">ラ</p>
-        <p class="char katakana" onmousedown="ri.play()">リ</p>
-        <p class="char katakana" onmousedown="ru.play()">ル</p>
-        <p class="char katakana" onmousedown="re.play()">レ</p>
-        <p class="char katakana" onmousedown="ro.play()">ロ</p>
-    </div>
-    <div class="row">
-        <p class="char">w</p>
-        <p class="char katakana" onmousedown="wa.play()">ワ</p>
-        <p class="char empty"></p>
-        <p class="char empty"></p>
-        <p class="char empty"></p>
-        <p class="char katakana" onmousedown="wo.play()">ヲ</p>
-    </div>
-    <div class="row">
-        <p class="char">n</p>
-        <p class="char katakana" onmousedown="nn.play()">ン</p>
-        <p class="char"></p>
-        <p class="char"></p>
-        <p class="char"></p>
-        <p class="char"></p>
-    </div>
-</div>
+</body>
+
+</html>
