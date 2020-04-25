@@ -39,17 +39,26 @@ a:hover{
     padding-left: 12px;
 }
 
-#title, #subtitle{
+#title, #subtitle, #info{
     text-align: center;
 }
+
 #title{
     font-size: 3rem;
+}
+
+#info{
+    color: var(--gray-mid);
 }
 
 #wrapper{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.blank{
+    height: 10vh;
 }
 
 footer{
