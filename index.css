@@ -1,33 +1,27 @@
 :root{
     --light-body-background: #FFFAFA;
     --dark-body-background: #373737;
+    --snow: #fffafa;
+    --black: #000;
+    --gray: #373737;
+    --gray-mid: #494949;
+    --gray-light: #D7D7D7;
+    --pink: #ff388a;
+    --pink-mid: #ff60a1;
+    --pink-light: #ff92bf;
+    --blue: #10B3FF;
+    --blue-mid: #33bbff;
+    --blue-light: #73d0ff;
+    --yellow: #f5b700;
+    --yellow-light: #f8d15c;
+    --yellow-mid: #f7c533;
 }
 
 body{
     background-color: var(--light-body-background);
     margin: 0px;
-}
-
-#navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: red;
-
-    display: none;
-}
-
-#wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    
-    height: 100vh;
 
     font-family: 'Noto Sans JP';
-    font-size: 3em;
 }
 
 a{
@@ -35,9 +29,79 @@ a{
     color: black;
 }
 
-#wrapper a:hover{
-    background-color: #30C4FF;
-    color: white;
+#navbar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
 
-    border-radius: 4px;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    display: none;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+#blank{
+    height: 10vh;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+    word-wrap: normal;
+    height: 10vh;
+}
+
+#syllabaries{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+}
+
+#syllabaries a{
+    font-size: 2rem;
+
+    padding: 8px 24px 8px 24px;
+    border-radius: 8px;
+    border: 2px dashed black;
+}
+
+#syllabaries a:hover{
+    color: var(--snow);
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    color: var(--snow);
+    display: none;
+}
+
+footer::selection{
+    background-color: var(--gray);
+    color: var(--pink-light);
+}
+
+.bgcolor-blue:hover{
+    background-color: var(--blue-light);
+    border-color: var(--snow);
+}
+
+.bgcolor-yellow:hover{
+    background-color: var(--yellow-light);
 }
