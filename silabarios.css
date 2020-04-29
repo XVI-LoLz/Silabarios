@@ -37,6 +37,7 @@ a:hover{
 
 #navbar a{
     padding-left: 12px;
+    display: none;
 }
 
 #title, #subtitle, #info{

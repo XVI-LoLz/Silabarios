@@ -65,7 +65,7 @@ a{
     height: 10vh;
 }
 
-#syllabaries{
+#buttons{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -73,7 +73,7 @@ a{
     height: 50vh;
 }
 
-#syllabaries a{
+#buttons a{
     font-size: 2rem;
 
     padding: 8px 24px 8px 24px;
@@ -81,7 +81,7 @@ a{
     border: 2px dashed black;
 }
 
-#syllabaries a:hover{
+#buttons a:hover{
     color: var(--snow);
 }
 
@@ -99,9 +99,15 @@ footer::selection{
 
 .bgcolor-blue:hover{
     background-color: var(--blue-light);
-    border-color: var(--snow);
+    text-shadow: 0px 0px 2px black;
 }
 
 .bgcolor-yellow:hover{
     background-color: var(--yellow-light);
+    text-shadow: 0px 0px 2px black;
+}
+
+.bgcolor-green:hover{
+    background-color: #61E2DB;
+    text-shadow: 0px 0px 2px black;
 }
